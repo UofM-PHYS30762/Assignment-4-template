@@ -40,7 +40,6 @@ public:
   // The move assignment operator needs to correctly reassign the memory from the original object
   
   // Getter functions (accessors) to individual elements of 4-momentum
-  // This should include function returning beta value 
 
   // Setter functions, to change values of 4-momentum 
   // Make sure you check input validity for the energy in the 4-momentum 
