@@ -16,9 +16,7 @@ class particle
 {
 private:
   string particle_name;
-  //...other data members (see slides on BB)
-  // We need the four-vector, you can leave the particle mass (or remove it, we don't mark it)
-
+  // Four-vector (a std::vector) goes here
 
 public:
   // Constructors
@@ -45,8 +43,8 @@ public:
   // Make sure you check input validity for the energy in the 4-momentum 
 
   // Function to print info about a particle 
-  // (not necessary or marked, but nice as you can extend the one you already have from Assignment 3)
-  void print_data();
+  // To understand memory management better: can you print the location in memory of the particle?
+  // void print_data();
 
 };
 
@@ -62,16 +60,16 @@ int main()
   // two electrons, four muons, one antielectron, one antimuon 
   // Use the parameterised constructor to do these
 
-  // (optional but nice) Print out the data from all the particles (put them in a vector)
+  // Print out the data from all the particles 
 
   // Sum the four-momenta of the two electrons 
-  // Do the dot product of the first two four-muons
-  // Assignment operator of an electron to a new electron
+  // Take the dot product of the two four-muons
+  // Assignment operator of the first electron to a new electron
   // Copy constructor of the first muon to a new muon
-  // Move the antielectron into another antielectron using the move constructor 
-  // Assign the antimuon to another antimuon using the move assignment
+  // Assign the first tau to another different tau using the move assignment 
+  // Move the second tau into the first tau using the move constructor 
 
-  // (optional but nice) Here or at the end of each step, print the new particle info
+  // Here or at the end of each step, print the new particle info including memory location
   // to convince yourself that you have used all special functions and operations correctly
 
   return 0;
